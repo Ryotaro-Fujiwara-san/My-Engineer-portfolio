@@ -28,6 +28,18 @@ const CONFIG = {
         projects: ['Ryotaro-Fujiwara-san/capstone', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
+    customProjects: {
+  display: true,
+  header: "Highlights",
+  projects: [
+    {
+      name: "MSIT Degree",
+      description: "Master of Science in Information Technology (University of the People, 2027)",
+      imageUrl: "/17502121852.jpg",
+      link: "https://www.uopeople.edu/"
+    }
+  ],
+},
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
