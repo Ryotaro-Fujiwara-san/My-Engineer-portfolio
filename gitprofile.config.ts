@@ -10,6 +10,18 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   bio: "Embedded Engineer (3 yrs) | MSIT @ UoPeople 🎓 <br/> <img src='/My-Engineer-portfolio/Bachelor’s degree.jfif' width='300'/>",
+   customPages: [
+    {
+      name: "Degree",
+      path: "/degree",
+      content: `
+        <h1>My Degree</h1>
+        <p>Here is my academic degree:</p>
+        <img src="/My-Engineer-portfolio/Bachelor’s degree.jfif" width="500"/>
+      `,
+    },
+  ],
+};
   base: '/My-Engineer-portfolio/',
   projects: {
     github: {
@@ -30,18 +42,7 @@ const CONFIG = {
       },
     },
 
-    customPages: [
-    {
-      name: "Degree",
-      path: "/degree",
-      content: `
-        <h1>My Degree</h1>
-        <p>Here is my academic degree:</p>
-        <img src="/My-Engineer-portfolio/Bachelor’s degree.jfif" width="500"/>
-      `,
-    },
-  ],
-};
+   
 
     customProjects: {
   display: true,
