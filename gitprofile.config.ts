@@ -28,7 +28,7 @@ const CONFIG = {
       projects: [
         {
           title: 'Degree（学位）',
-          description: 'MSIT @ UoPeople (2027)',
+          description: 'B.Sc. in Physics — Okayama University of Science (2024)',
           imageUrl:
             'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/bachelor.jpg',
           link:
