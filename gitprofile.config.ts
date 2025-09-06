@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  bio: "Embedded Engineer (3 yrs) | MSIT @ UoPeople 🎓 <br/> <img src='/Bachelor’s degree.jfif' width='300'/>",
+  bio: "Embedded Engineer (3 yrs) | MSIT @ UoPeople 🎓 <br/> <img src='/My-Engineer-portfolio/Bachelor’s degree.jfif' width='300'/>",
   base: '/My-Engineer-portfolio/',
   projects: {
     github: {
