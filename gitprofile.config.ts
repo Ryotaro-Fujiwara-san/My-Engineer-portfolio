@@ -29,6 +29,20 @@ const CONFIG = {
         projects: ['Ryotaro-Fujiwara-san/capstone', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
+
+    customPages: [
+    {
+      name: "Degree",
+      path: "/degree",
+      content: `
+        <h1>My Degree</h1>
+        <p>Here is my academic degree:</p>
+        <img src="/My-Engineer-portfolio/Bachelor’s degree.jfif" width="500"/>
+      `,
+    },
+  ],
+};
+
     customProjects: {
   display: true,
   header: "Highlights",
