@@ -30,7 +30,7 @@ const CONFIG = {
           title: 'Degree（学位）',
           description: 'MSIT @ UoPeople (2027)',
           imageUrl:
-            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/degree.jpg',
+            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/bachelor.jpg',
           link:
             'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/',
         },
@@ -43,23 +43,6 @@ const CONFIG = {
 
   social: {
     linkedin: 'www.linkedin.com/in/ryotaro-fujiwara',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '',
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '',
-    discord: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
     phone: '',
     email: 'expo70314911@gmail.com',
   },
