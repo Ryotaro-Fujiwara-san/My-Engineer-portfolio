@@ -9,7 +9,7 @@ const CONFIG = {
   base: '/My-Engineer-portfolio/',
 
   bio: `Embedded Engineer (3 yrs) | MSIT @ UoPeople 🎓 <br/>
-        <img src="/My-Engineer-portfolio/degree.jpg" width="300"/>`,
+        <img src="/My-Engineer-portfolio/Bachelor’s degree.jfif" width="300"/>`,
 
   // 任意: 学位ページ
   customPages: [
