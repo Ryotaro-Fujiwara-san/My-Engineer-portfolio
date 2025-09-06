@@ -1,28 +1,10 @@
 // gitprofile.config.ts
-
 const CONFIG = {
-  github: {
-    username: 'Ryotaro-Fujiwara-san',
-  },
+  github: { username: 'Ryotaro-Fujiwara-san' },
 
-  // ← base は最上位に置く
   base: '/My-Engineer-portfolio/',
 
-  bio: `Embedded Engineer (3 yrs) | MSIT @ UoPeople 🎓 <br/>
-        <img src="/My-Engineer-portfolio/Bachelor’s degree.jfif" width="300"/>`,
-
-  // 任意: 学位ページ
-  customPages: [
-    {
-      name: 'Degree',
-      path: '/degree',
-      content: `
-        <h1>My Degree</h1>
-        <p>Here is my academic degree:</p>
-        <img src="/My-Engineer-portfolio/degree.jpg" width="500"/>
-      `,
-    },
-  ],
+  // ← ここに「bio」「customPages」は置かない（未対応のため）
 
   projects: {
     github: {
@@ -32,50 +14,27 @@ const CONFIG = {
       automatic: {
         sortBy: 'stars',
         limit: 8,
-        exclude: {
-          forks: false,
-          projects: [],
-        },
+        exclude: { forks: false, projects: [] },
       },
       manual: {
         projects: ['Ryotaro-Fujiwara-san/capstone', 'arifszn/pandora'],
       },
     },
 
-    // ↓ このブロックはテンプレ側に無い項目でも型エラーにはならない想定です
-    customProjects: {
-      display: true,
+    // customProjects は使わない（削除）
+
+    external: {
       header: 'Highlights',
       projects: [
         {
-          name: 'MSIT Degree',
-          description:
-            'Master of Science in Information Technology (University of the People, 2027)',
-          imageUrl: '/My-Engineer-portfolio/degree.jpg',
-          link: 'https://www.uopeople.edu/',
-        },
-      ],
-    },
-
-    external: {
-      header: 'My Projects',
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title: 'Degree（学位）',
+          description: 'MSIT @ UoPeople (2027)',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/degree.jpg',
+          link:
+            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/',
         },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
+        // 必要なら他のカードをここに追加
       ],
     },
   },
@@ -105,51 +64,20 @@ const CONFIG = {
     email: 'expo70314911@gmail.com',
   },
 
-  resume: {
-    fileUrl: 'https://jp.docworkspace.com/d/sIM3Ox4-nAe-G5sUG',
-  },
+  resume: { fileUrl: 'https://jp.docworkspace.com/d/sIM3Ox4-nAe-G5sUG' },
 
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'PHP', 'Laravel', 'JavaScript', 'React.js', 'Node.js', 'Nest.js', 'MySQL',
+    'PostgreSQL', 'Git', 'Docker', 'PHPUnit', 'CSS', 'Antd', 'Tailwind',
   ],
 
   experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
+    { company: 'Company Name', position: 'Position', from: 'September 2021', to: 'Present', companyLink: 'https://example.com' },
+    { company: 'Company Name', position: 'Position', from: 'July 2019', to: 'August 2021', companyLink: 'https://example.com' },
   ],
 
   certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+    { name: 'Lorem ipsum', body: 'Lorem ipsum dolor sit amet', year: 'March 2022', link: 'https://example.com' },
   ],
 
   educations: [
@@ -179,9 +107,7 @@ const CONFIG = {
   ],
 
   blog: { source: 'dev', username: 'arifszn', limit: 2 },
-
   googleAnalytics: { id: '' },
-
   hotjar: { id: '', snippetVersion: 6 },
 
   themeConfig: {
@@ -190,18 +116,15 @@ const CONFIG = {
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'light', 'dark', 'cupcake', 'bumblebee', 'emerald', 'corporate', 'synthwave',
-      'retro', 'cyberpunk', 'valentine', 'halloween', 'garden', 'forest', 'aqua',
-      'lofi', 'pastel', 'fantasy', 'wireframe', 'black', 'luxury', 'dracula', 'cmyk',
-      'autumn', 'business', 'acid', 'lemonade', 'night', 'coffee', 'winter', 'dim',
-      'nord', 'sunset', 'caramellatte', 'abyss', 'silk', 'procyon',
+      'light','dark','cupcake','bumblebee','emerald','corporate','synthwave',
+      'retro','cyberpunk','valentine','halloween','garden','forest','aqua',
+      'lofi','pastel','fantasy','wireframe','black','luxury','dracula','cmyk',
+      'autumn','business','acid','lemonade','night','coffee','winter','dim',
+      'nord','sunset','caramellatte','abyss','silk','procyon',
     ],
   },
 
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
-
+  footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
   enablePWA: true,
 };
 
