@@ -23,20 +23,7 @@ const CONFIG = {
 
     // customProjects は使わない（削除）
 
-    external: {
-      header: 'Highlights',
-      projects: [
-        {
-          title: 'Degree（学位）',
-          description: 'B.Sc. in Physics — Okayama University of Science (2024)',
-          imageUrl:
-            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/bachelor.jpg',
-          link:
-            'https://ryotaro-fujiwara-san.github.io/My-Engineer-portfolio/degree/',
-        },
-        // 必要なら他のカードをここに追加
-      ],
-    },
+   
   },
 
   seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
