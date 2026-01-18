@@ -4,29 +4,41 @@ const CONFIG = {
 
   base: '/My-Engineer-portfolio/',
 
-  // ← ここに「bio」「customPages」は置かない（未対応のため）
-
   projects: {
     github: {
       display: true,
-      header: 'My Projects',
+      header: 'Github Projects',
       mode: 'manual',
       automatic: {
-        sortBy: 'stars',
+        sortBy: 'updated',
         limit: 8,
         exclude: { forks: false, projects: [] },
       },
       manual: {
-        projects: ['Ryotaro-Fujiwara-san/capstone', 'arifszn/pandora'],
+        // ここにあなたのリポジトリを指定（pandoraは削除済み）
+        projects: [
+            'Ryotaro-Fujiwara-san/credit-scoring-transformer',
+            'Ryotaro-Fujiwara-san/capstone'
+        ],
       },
     },
 
-    // customProjects は使わない（削除）
-
-   
+    // ↓ここが重要！ビジネス視点をアピールするために「external」を使って詳細を書きます
+    external: {
+      header: 'Strategic AI Projects',
+      projects: [
+        {
+          title: 'Profit-Driven Credit Scoring AI',
+          description:
+            'FinTechにおける信用スコアリングの革新。最新のDeep Learning (FT-Transformer) とFocal Lossを用い、単なる予測精度(AUC)ではなく「期待利益の最大化」を目的関数に据えた実務直結型AIモデル。',
+          imageUrl: 'https://img.icons8.com/fluency/96/bullish.png',
+          link: 'https://github.com/Ryotaro-Fujiwara-san/credit-scoring-transformer',
+        },
+      ],
+    },
   },
 
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Ryotaro Fujiwara', description: 'AI Engineer & Data Scientist Portfolio', imageURL: '' },
 
   social: {
     linkedin: 'www.linkedin.com/in/ryotaro-fujiwara',
@@ -37,11 +49,14 @@ const CONFIG = {
   resume: { fileUrl: 'https://jp.docworkspace.com/d/sIM3Ox4-nAe-G5sUG' },
 
   skills: [
-    'PHP', 'Laravel', 'JavaScript', 'React.js', 'Node.js', 'Nest.js', 'MySQL',
-    'PostgreSQL', 'Git', 'Docker', 'PHPUnit', 'CSS', 'Antd', 'Tailwind',
+    // AIエンジニアとしてアピールするため、Python関連を先頭に移動
+    'Python', 'PyTorch', 'Machine Learning', 'Transformer', 'Data Science',
+    'PHP', 'Laravel', 'JavaScript', 'React.js', 'Node.js', 'MySQL',
+    'PostgreSQL', 'Git', 'Docker', 'Tailwind',
   ],
 
   experiences: [
+    // 必要に応じて書き換えてください（とりあえずプレースホルダーのままにしています）
     { company: 'Company Name', position: 'Position', from: 'September 2021', to: 'Present', companyLink: 'https://example.com' },
     { company: 'Company Name', position: 'Position', from: 'July 2019', to: 'August 2021', companyLink: 'https://example.com' },
   ],
@@ -52,28 +67,10 @@ const CONFIG = {
 
   educations: [
     { institution: 'Institution Name', degree: 'Degree', from: '2015', to: '2019' },
-    { institution: 'Institution Name', degree: 'Degree', from: '2012', to: '2014' },
   ],
 
   publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    // 論文などの実績がまだなければ、空にして非表示にすることも可能です
   ],
 
   blog: { source: 'dev', username: 'arifszn', limit: 2 },
@@ -81,20 +78,16 @@ const CONFIG = {
   hotjar: { id: '', snippetVersion: 6 },
 
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'corporate', // ビジネス向けに「corporate」テーマに変更（お好みでlofiに戻してもOK）
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'light','dark','cupcake','bumblebee','emerald','corporate','synthwave',
-      'retro','cyberpunk','valentine','halloween','garden','forest','aqua',
-      'lofi','pastel','fantasy','wireframe','black','luxury','dracula','cmyk',
-      'autumn','business','acid','lemonade','night','coffee','winter','dim',
-      'nord','sunset','caramellatte','abyss','silk','procyon',
+      'light','dark','corporate','lofi','business','dracula','night',
     ],
   },
 
-  footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
+  footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a>`,
   enablePWA: true,
 };
 
