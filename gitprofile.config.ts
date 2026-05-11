@@ -19,6 +19,7 @@ const CONFIG = {
         projects: [
             'Ryotaro-Fujiwara-san/credit-scoring-transformer',
             'Ryotaro-Fujiwara-san/capstone'
+            'Ryotaro-Fujiwara-san/LinguaReactor-Pro'
         ],
       },
     },
