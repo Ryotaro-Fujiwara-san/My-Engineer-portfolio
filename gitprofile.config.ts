@@ -18,7 +18,7 @@ const CONFIG = {
         // ここにあなたのリポジトリを指定（pandoraは削除済み）
         projects: [
             'Ryotaro-Fujiwara-san/credit-scoring-transformer',
-            'Ryotaro-Fujiwara-san/capstone'
+            'Ryotaro-Fujiwara-san/capstone',
             'Ryotaro-Fujiwara-san/LinguaReactor-Pro'
         ],
       },
