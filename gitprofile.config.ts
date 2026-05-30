@@ -6,7 +6,7 @@ const CONFIG = {
 
   projects: {
     github: {
-      display: true,
+      display: false,
       header: 'Github Projects',
       mode: 'manual',
       automatic: {
