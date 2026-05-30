@@ -17,9 +17,7 @@ const CONFIG = {
       manual: {
         // ここにあなたのリポジトリを指定（pandoraは削除済み）
         projects: [
-            'Ryotaro-Fujiwara-san/credit-scoring-transformer',
-            'Ryotaro-Fujiwara-san/capstone',
-            'Ryotaro-Fujiwara-san/LinguaReactor-Pro'
+            'Ryotaro-Fujiwara-san/Mingo',
         ],
       },
     },
@@ -29,11 +27,11 @@ const CONFIG = {
       header: 'Strategic AI Projects',
       projects: [
         {
-          title: 'Profit-Driven Credit Scoring AI',
+          title: 'Mingo',
           description:
-            'FinTechにおける信用スコアリングの革新。最新のDeep Learning (FT-Transformer) とFocal Lossを用い、単なる予測精度(AUC)ではなく「期待利益の最大化」を目的関数に据えた実務直結型AIモデル。',
+            '自分で使う言語表現が意味・発音的に自然かどうか、そして能動的に知らなかった表現を使えるようにするAIモデル。',
           imageUrl: 'https://img.icons8.com/fluency/96/bullish.png',
-          link: 'https://github.com/Ryotaro-Fujiwara-san/credit-scoring-transformer',
+          link: 'https://github.com/Ryotaro-Fujiwara-san/Mingo',
         },
       ],
     },
