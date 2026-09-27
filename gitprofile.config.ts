@@ -33,6 +33,13 @@ const CONFIG = {
           imageUrl: 'https://img.icons8.com/fluency/96/bullish.png',
           link: 'https://github.com/Ryotaro-Fujiwara-san/Mingo',
         },
+        {                                                                    // ← ここから追加
+          title: 'TabulaSense',
+          description:
+            '掃除ロボット。（カメラでテーブル上の汚れ・残量を認識し、アームに取り付けたワイパー/モップでテーブル表面を自動で掃除する機能）',
+          imageUrl: 'https://img.icons8.com/fluency/96/robot-2.png',
+          link: 'https://github.com/Ryotaro-Fujiwara-san/TabulaSense',
+        },  
       ],
     },
   },
